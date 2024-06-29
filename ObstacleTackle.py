@@ -42,7 +42,7 @@ class Car(pygame.sprite.Sprite):
 class Obstacle(pygame.sprite.Sprite):
     def __init__(self):
         super().__init__()
-        self.image = pygame.image.load('obstacles.png').convert_alpha()
+        self.image = pygame.image.load('obstacle.png').convert_alpha()
         self.rect = self.image.get_rect()
         self.rect.x = random.randint(0, SCREENWIDTH - OBSTACLE_WIDTH)
         self.rect.y = -OBSTACLE_HEIGHT
